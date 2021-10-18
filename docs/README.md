@@ -68,7 +68,7 @@ This article explains a method of addressing problems that require more than jus
 
 Here's an example they provided of what that process might look like:
 
-![5-whys-diagram](../img/5-whys-single-lane.png)
+![5-whys-diagram](./img/5-whys-single-lane.png)
 
 A couple of useful tips that they provided are:
 - The "5" is just a suggestion, more or less "why's" may be needed.
