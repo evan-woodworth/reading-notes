@@ -96,7 +96,7 @@ In this video, Mark Rober explains how changing your changing your reaction to f
 
  - [Class 01 Reading](#class-01-reading)
 
- ### Class 01 Reading
+### Class 01 Reading
 
 1. Describe (in plain English) what Array.map() does  
 Array.map() runs each element of an array through a function, and populates a new array with the results.
