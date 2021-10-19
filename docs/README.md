@@ -4,6 +4,7 @@ A collection of notes and take-aways throughout my Code 401 journey.
 
 - [Articles](#articles)
 - [Videos](#videos)
+- [General Notes](#general-notes)
 
 ## Articles
 
@@ -90,3 +91,38 @@ Essentially, as asynchronous callbacks are executed, they get passed to a web ap
 [source](https://www.youtube.com/watch?v=9vJRopau0g0)
 
 In this video, Mark Rober explains how changing your changing your reaction to failure can ultimately lead to success. He used an example set of data that he collected to show that people who are not concerned with the negative ramifications of failure can bounce right back and try again until they get it right. He then gave many examples from his own life and experiences, reinforcing the idea that you should embrace failure and learn from it, rather than be ashamed or give up.
+
+## General Notes
+
+ - [Read: Class 01](#read-class-01)
+
+ ### Read: Class 01
+
+1. Describe (in plain English) what Array.map() does  
+Array.map() runs each element of an array through a function, and populates a new array with the results.
+2. Describe (in plain English) what Array.reduce() does  
+Array.reduce() runs each element of an array through a function, producing one accumulated result.
+3. Provide code snippets showing how to use superagent() to fetch data from a URL and log the result
+   - With normal Promise .then() syntax
+    ```javascript
+    superagent.get('http://someurl')
+    .then(result => {
+        console.log(result)
+    })
+    .catch(err => console.error(err));
+    ```
+   - Again with async / await syntax
+    ```javascript
+    async () => {
+        try {
+            const result = await superagent.get('http://someurl');
+            console.log(result);
+        } catch (err) {
+            console.error(err);
+        }
+    }
+    ```
+4. Explain promises as though you were mentoring a Code 301 level student  
+Promises represent an asynchronous function call's "promise" to return data at some point in the future, allowing other code to be executed in the meantime. A promise can be assigned to a handler, and a pending promise can return as "fullfilled", providing a value, or "rejected", providing an error definition.
+5. Are all callback functions considered to be Asynchronous? Why or Why Not?  
+A callback function can be either synchronous or asynchronous, depending on how it is called.
