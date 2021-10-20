@@ -134,7 +134,7 @@ A callback function can be either synchronous or asynchronous, depending on how 
 PUT updates an entire resource or creates a new one if it doesn't exist, whereas PATCH updates a partial resource. Using PUT, you'd have to include all of the information in the resource, including the information that doesn't change. With PATCH, you would only have to provide the information that you want to change.
 2. Provide links to 3 services or tools that allow you to “mock” an API for development like json-server
    - [JSONPlaceholder](https://jsonplaceholder.typicode.com/) - Free fake API for testing and prototyping.
-   - [REQ | RES](https://reqres.in/) - A hosted REST-API ready to respond to your AJAX requests.
+   - [REQ RES](https://reqres.in/) - A hosted REST-API ready to respond to your AJAX requests.
    - [Fake JSON API](https://mocki.io/fake-json-api) - Access fake APIs with dummy data, or create your own fake JSON API.
 3. Compare and contrast Swagger and APIDoc.js  
 Swagger holds an entire suite of products and tools for API development, for individuals and teams alike. APIDoc.js allows for API documentation generation for comments in your source code.
