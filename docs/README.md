@@ -95,6 +95,7 @@ In this video, Mark Rober explains how changing your changing your reaction to f
 ## General Notes
 
  - [Class 01 Reading](#class-01-reading)
+ - [Class 02 Reading](#class-02-reading)
 
 ### Class 01 Reading
 
@@ -126,3 +127,28 @@ Array.reduce() runs each element of an array through a function, producing one a
 Promises represent an asynchronous function call's "promise" to return data at some point in the future, allowing other code to be executed in the meantime. A promise can be assigned to a handler, and a pending promise can return as "fullfilled", providing a value, or "rejected", providing an error definition.
 5. Are all callback functions considered to be Asynchronous? Why or Why Not?  
 A callback function can be either synchronous or asynchronous, depending on how it is called.
+
+### Class 02 Reading
+
+1. What’s the difference between PUT and PATCH?  
+PUT updates an entire resource or creates a new one if it doesn't exist, whereas PATCH updates a partial resource. Using PUT, you'd have to include all of the information in the resource, including the information that doesn't change. With PATCH, you would only have to provide the information that you want to change.
+2. Provide links to 3 services or tools that allow you to “mock” an API for development like json-server
+   - [JSONPlaceholder](https://jsonplaceholder.typicode.com/) - Free fake API for testing and prototyping.
+   - [REQ | RES](https://reqres.in/) - A hosted REST-API ready to respond to your AJAX requests.
+   - [Fake JSON API](https://mocki.io/fake-json-api) - Access fake APIs with dummy data, or create your own fake JSON API.
+3. Compare and contrast Swagger and APIDoc.js  
+Swagger holds an entire suite of products and tools for API development, for individuals and teams alike. APIDoc.js allows for API documentation generation for comments in your source code.
+4. Which HTTP status codes should be sent with each type of (un)successful API call?  
+There are numerous codes in the 300's to 500's. They can be found [here](https://www.ibm.com/docs/ru/qradar-common?topic=overview-api-error-messages).
+5. Compare and contrast SOAP and ReST  
+Some of the major differences include security, bandwidth, and flexibility. SOAP needs more bandwidth, requires advanced security, and is overall much more strict in implementation. The following diagram was pulled from [parasoft.com](https://www.parasoft.com/blog/web-api-vs-web-services-microservices-basics-differences/)  
+![soap-vs-rest](./img/soap-vs-rest.png)
+
+#### Vocabulary
+
+| Term | Definition | Source |
+|--|--|--|
+| Web Server | "A web server is a computer that runs websites. It's a computer program that distributes web pages as they are requisitioned. The basic objective of the web server is to store, process and deliver web pages to the users." | [economictimes](https://economictimes.indiatimes.com/definition/web-server) |
+| Express | "Express is a popular unopinionated web framework, written in JavaScript and hosted within the Node. js runtime environment." | [mozilla](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs#:~:text=Express%20is%20a%20popular%20unopinionated,web%20development%20and%20deployment%20tasks.) |
+| Routing | "Routing is the process of selecting a path for traffic in a network or between or across multiple networks." | [wikipedia](https://en.wikipedia.org/wiki/Routing) |
+| WRRC | Web Request Response Cycle - "The request/response cycle traces how a user's request flows through the app." | [codecademy](https://www.codecademy.com/articles/request-response-cycle-static) |
