@@ -96,6 +96,7 @@ In this video, Mark Rober explains how changing your changing your reaction to f
 
  - [Class 01 Reading](#class-01-reading)
  - [Class 02 Reading](#class-02-reading)
+ - [Class 03 Reading](#class-03-reading)
 
 ### Class 01 Reading
 
@@ -152,3 +153,16 @@ Some of the major differences include security, bandwidth, and flexibility. SOAP
 | Express | "Express is a popular unopinionated web framework, written in JavaScript and hosted within the Node. js runtime environment." | [mozilla](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs#:~:text=Express%20is%20a%20popular%20unopinionated,web%20development%20and%20deployment%20tasks.) |
 | Routing | "Routing is the process of selecting a path for traffic in a network or between or across multiple networks." | [wikipedia](https://en.wikipedia.org/wiki/Routing) |
 | WRRC | Web Request Response Cycle - "The request/response cycle traces how a user's request flows through the app." | [codecademy](https://www.codecademy.com/articles/request-response-cycle-static) |
+
+### Class 03 Reading
+
+1. Name 3 real world use cases where you’d want to change the request with custom middleware  
+Authentication, logging, error handling
+2. True or false: The route handler is middleware?  
+False
+3. In what ways can a middleware function end the process and send data to the browser?  
+With any of the response functions, such as res.send, res.json, etc.
+4. At what point in the request lifecycle can you “inject” middleware?  
+At any point before a request has been completed.
+5. What can cause express to error with “Request headers sent twice, cannot start a second response”  
+"The error "Error: Can't set headers after they are sent." means that you're already in the Body or Finished state, but some function tried to set a header or statusCode. When you see this error, try to look for anything that tries to send a header after some of the body has already been written. For example, look for callbacks that are accidentally called twice, or any error that happens after the body is sent." -from a stack overflow [response](https://stackoverflow.com/questions/7042340/error-cant-set-headers-after-they-are-sent-to-the-client)
