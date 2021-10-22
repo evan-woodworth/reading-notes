@@ -97,6 +97,7 @@ In this video, Mark Rober explains how changing your changing your reaction to f
  - [Class 01 Reading](#class-01-reading)
  - [Class 02 Reading](#class-02-reading)
  - [Class 03 Reading](#class-03-reading)
+ - [Class 04 Reading](#class-04-reading)
 
 ### Class 01 Reading
 
@@ -166,3 +167,32 @@ With any of the response functions, such as res.send, res.json, etc.
 At any point before a request has been completed.
 5. What can cause express to error with “Request headers sent twice, cannot start a second response”  
 "The error "Error: Can't set headers after they are sent." means that you're already in the Body or Finished state, but some function tried to set a header or statusCode. When you see this error, try to look for anything that tries to send a header after some of the body has already been written. For example, look for callbacks that are accidentally called twice, or any error that happens after the body is sent." -from a stack overflow [response](https://stackoverflow.com/questions/7042340/error-cant-set-headers-after-they-are-sent-to-the-client)
+
+### Class 04 Reading
+
+1. Name 3 advantages to Test Driven Development  
+More comprehensive testing, focused productivity, better modularization.
+2. In what case would you need to use beforeEach() or afterEach() in a test suite?  
+When you are testing data models.
+3. What is one downside of Test Driven Development  
+A considerable increase in work during early development.
+4. What’s the primary difference between ES6 Classes and Constructor/Prototype Classes?  
+According to [Justin Robertson](https://www.toptal.com/javascript/es6-class-chaos-keeps-js-developer-up), "The most important difference between class- and prototype-based inheritance is that a class defines a type which can be instantiated at runtime, whereas a prototype is itself an object instance."
+5. Why REST?  
+REST is highly flexible and reliable. Data is not tied to resources or methods, and data should be relatively consistent with future requests, making it easily cacheable.
+
+#### Vocabulary
+
+| Term | Definition | source |
+|-|-|-|
+| functional programming | "...a programming paradigm where programs are constructed by applying and composing functions. It is a declarative programming paradigm in which function definitions are trees of expressions that map values to other values, rather than a sequence of imperative statements which update the running state of the program." | [wikipedia](https://en.wikipedia.org/wiki/Functional_programming) |
+| object-oriented programming (OOP) | "Object-oriented programming (OOP) is a computer programming model that organizes software design around data, or objects, rather than functions and logic." | [techtarget.com](https://searchapparchitecture.techtarget.com/definition/object-oriented-programming-OOP#:~:text=Object%2Doriented%20programming%20(OOP)%20is%20a%20computer%20programming%20model,rather%20than%20functions%20and%20logic.&text=Once%20an%20object%20is%20known,sequences%20that%20can%20manipulate%20it.) |
+| class | "In object-oriented programming, a class is an extensible program-code-template for creating objects, providing initial values for state and implementations of behavior." | [wikipedia](Wikipedia) |
+| super | A keyword use to call methods from a parent class. | |
+| this | A keyword referring to the instance that is using it. | |
+| Test Driven Development (TDD) | A style of programming wherein tests are written first, to fail, and code is written afterwards to make the tests pass. | |
+| Jest | "Jest is a JavaScript testing framework designed to ensure correctness of any JavaScript codebase." | [jestjs.io](https://jestjs.io) |
+| Continuous Integration (CI) | "... the practice of automating the integration of code changes from multiple contributors into a single software project." | [atlassian.com](https://www.atlassian.com) |
+| REST | "REST defines a set of constraints for how the architecture of an Internet-scale distributed hypermedia system, such as the Web, should behave." Those constraints are: Client–server architecture, Statelessness, Cacheability, Layered system, Code on demand (optional), and Uniform interface. | [wikipedia](https://en.wikipedia.org/wiki/Representational_state_transfer) |
+| Data Model | "an abstract model that organizes elements of data and standardizes how they relate to one another and to the properties of real-world entities." | [wikipedia](https://en.wikipedia.org/wiki/Data_model) |
+
