@@ -99,6 +99,7 @@ In this video, Mark Rober explains how changing your changing your reaction to f
  - [Class 03 Reading](#class-03-reading)
  - [Class 04 Reading](#class-04-reading)
  - [Class 06 Reading](#class-06-reading)
+ - [Class 07 Reading](#class-07-reading)
 
 ### Class 01 Reading
 
@@ -216,3 +217,33 @@ Having just learned about singletons, I would use a singleton to keep track of a
 | CRUD -> REST Method Matches | Create - POST, PUT; READ - GET; Update - PUT, PATCH, POST; Delete - DELETE | [medium](https://medium.com/@ritika.atal.work/crud-mapping-to-http-verbs-354a3c0009f5) |
 | Mock Testing | Using a fake resource for testing. |  |
 
+### Class 07 Reading
+
+* Write the following steps in the correct order:
+    1. Register your application to get a client_id and client_secret
+    2. Redirect to a third party authentication endpoint
+    3. Ask the client if they want to sign in via a third party
+    4. Receive authorization code
+    5. Make a request to the access token endpoint
+    6. Receive access token
+    7. Make a request to a third-party API endpoint
+    [source](https://auth0.com/docs/authorization/flows/authorization-code-flow-with-proof-key-for-code-exchange-pkce)
+* What can you do with an authorization code?  
+Good for one use, the authorization code is sent to the authorization server.
+* What can you do with an access token?  
+The access token is used to access information from an API.
+* What’s a benefit of using OAuth instead of your own basic authentication?  
+OAuth is considered more secure than basic authentication. Not only does the user not have to provide a password, potentially providing sensitive information, OAuth tokens expire after a time, requiring reauthentication.
+
+
+#### Vocabulary
+
+| Term | Definition | Source |
+|-|-|-|
+| Client ID | "The Client ID is a public identifier of your application." | [docs.microsoft](https://docs.microsoft.com/en-us/linkedin/shared/api-guide/best-practices/secure-applications) |
+| Client Secret | "The Client Secret is confidential and should only be used to authenticate your application and make requests to LinkedIn's APIs." | [docs.microsoft](https://docs.microsoft.com/en-us/linkedin/shared/api-guide/best-practices/secure-applications) |
+| Authentication Endpoint | "... an endpoint that is called to obtain an access token" | [ibm docs](https://www.ibm.com/docs/en/sva/10.0.0?topic=stanza-authentication-endpoint) |
+| Access Token Endpoint | "... where apps make a request to get an access token for a user." | [OAuth](https://www.oauth.com/oauth2-servers/access-tokens/) |
+| API Endpoint | An endpoint allowing access to information about the user being authenticated. | [auth0](https://auth0.com/docs/authorization/flows/authorization-code-flow-with-proof-key-for-code-exchange-pkce) |
+| Authorization Code | Good for one use, the authorization code is sent to the authorization server. | [auth0](https://auth0.com/docs/authorization/flows/authorization-code-flow-with-proof-key-for-code-exchange-pkce) |
+| Access Token | The access token is used to access information from an API. | [auth0](https://auth0.com/docs/authorization/flows/authorization-code-flow-with-proof-key-for-code-exchange-pkce) |
