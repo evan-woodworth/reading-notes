@@ -98,6 +98,7 @@ In this video, Mark Rober explains how changing your changing your reaction to f
  - [Class 02 Reading](#class-02-reading)
  - [Class 03 Reading](#class-03-reading)
  - [Class 04 Reading](#class-04-reading)
+ - [Class 06 Reading](#class-06-reading)
 
 ### Class 01 Reading
 
@@ -195,4 +196,23 @@ REST is highly flexible and reliable. Data is not tied to resources or methods, 
 | Continuous Integration (CI) | "... the practice of automating the integration of code changes from multiple contributors into a single software project." | [atlassian.com](https://www.atlassian.com) |
 | REST | "REST defines a set of constraints for how the architecture of an Internet-scale distributed hypermedia system, such as the Web, should behave." Those constraints are: Client–server architecture, Statelessness, Cacheability, Layered system, Code on demand (optional), and Uniform interface. | [wikipedia](https://en.wikipedia.org/wiki/Representational_state_transfer) |
 | Data Model | "an abstract model that organizes elements of data and standardizes how they relate to one another and to the properties of real-world entities." | [wikipedia](https://en.wikipedia.org/wiki/Data_model) |
+
+### Class 06 Reading
+
+1. Explain what a “Singleton” is (in Computer Science terms)  
+A singleton is a class that can only be instantiated once.
+2. Explain how the Singleton pattern can be used with Node modules, specifically with classes  
+Caching with a singleton would mean that only one cache could be used/accessed at a time. Since modules are cached when they are first loaded, each module will have only one object returned each time it is called, without duplicated being made.
+3. If you were tasked with building a middleware system like Express uses, what approach might you take to construct/operate it?  
+Having just learned about singletons, I would use a singleton to keep track of all middleware that is implemented, ensuring that only one copy of each is implemented, no matter how many times it is used or called.
+
+#### Vocabulary
+
+| Term | Definition | Source |
+|-|-|-|
+| Router Middleware | "... a piece of code that comes in the middle of request and response." | [stackoverflow](https://stackoverflow.com/questions/63106648/what-is-router-middleware-in-express) |
+| Dynamic Module Loading | Loading modules at run-time. |  |
+| Singleton Pattern | "... a software design pattern that restricts the instantiation of a class to one "single" instance. This is useful when exactly one object is needed to coordinate actions across the system." | [wikipedia](https://en.wikipedia.org/wiki/Singleton_pattern) |
+| CRUD -> REST Method Matches | Create - POST, PUT; READ - GET; Update - PUT, PATCH, POST; Delete - DELETE | [medium](https://medium.com/@ritika.atal.work/crud-mapping-to-http-verbs-354a3c0009f5) |
+| Mock Testing | Using a fake resource for testing. |  |
 
