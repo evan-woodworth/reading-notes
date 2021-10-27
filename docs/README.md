@@ -100,6 +100,7 @@ In this video, Mark Rober explains how changing your changing your reaction to f
  - [Class 04 Reading](#class-04-reading)
  - [Class 06 Reading](#class-06-reading)
  - [Class 07 Reading](#class-07-reading)
+ - [Class 08 Reading](#class-08-reading)
 
 ### Class 01 Reading
 
@@ -247,3 +248,22 @@ OAuth is considered more secure than basic authentication. Not only does the use
 | API Endpoint | An endpoint allowing access to information about the user being authenticated. | [auth0](https://auth0.com/docs/authorization/flows/authorization-code-flow-with-proof-key-for-code-exchange-pkce) |
 | Authorization Code | Good for one use, the authorization code is sent to the authorization server. | [auth0](https://auth0.com/docs/authorization/flows/authorization-code-flow-with-proof-key-for-code-exchange-pkce) |
 | Access Token | The access token is used to access information from an API. | [auth0](https://auth0.com/docs/authorization/flows/authorization-code-flow-with-proof-key-for-code-exchange-pkce) |
+
+### Class 08 Reading
+
+1. When is Basic Authorization used vs. Bearer Authorization?  
+Basic Authorization uses a login and password, and Bearer Authorization uses tokens. Tokens allow for easy management of RBAC, as tokens can be swapped fairly easily, each bearing different roles.
+2. What does the JSON Web Token package do?  
+The JSON Web Token package provides a compact token format that we can use to authenticate clients, allowing us to securely send information as a JSON object.
+3. What considerations should we make when creating and storing a SECRET?  
+We need to make sure that it stays secret. It should be stored somewhere that it can be accessed without showing what it is, and should be ignored from any git activity. In other words, it should be placed in your .env file, which should be on your .gitignore list.
+
+#### Vocabulary
+
+| Term | Definition | Source |
+|-|-|-|
+| encryption | "Encryption is the process of translating plain text data (plaintext) into something that appears to be random and meaningless (ciphertext)." | [docs.microsoft](https://docs.microsoft.com/en-us/windows/win32/seccrypto/data-encryption-and-decryption) |
+| token | "... an object (in software or in hardware) which represents the right to perform some operation ..." | [wikipedia](https://en.wikipedia.org/wiki/Token#:~:text=from%20Massachusetts%2C%20USA-,Computing,physical%20device%20for%20computer%20authentication) |
+| bearer | The bearer of a token. |  |
+| secret | Could refer to either the password used in basic authentication, or the string cipher used in encryption. |  |
+| JSON Web Token | "... a proposed Internet standard for creating data with optional signature and/or optional encryption whose payload holds JSON that asserts some number of claims. The tokens are signed either using a private secret or a public/private key." | [wikipedia](https://en.wikipedia.org/wiki/JSON_Web_Token) |
