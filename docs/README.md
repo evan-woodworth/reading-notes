@@ -101,6 +101,7 @@ In this video, Mark Rober explains how changing your changing your reaction to f
  - [Class 06 Reading](#class-06-reading)
  - [Class 07 Reading](#class-07-reading)
  - [Class 08 Reading](#class-08-reading)
+ - [Class 09 Reading](#class-09-reading)
 
 ### Class 01 Reading
 
@@ -267,3 +268,25 @@ We need to make sure that it stays secret. It should be stored somewhere that it
 | bearer | The bearer of a token. |  |
 | secret | Could refer to either the password used in basic authentication, or the string cipher used in encryption. |  |
 | JSON Web Token | "... a proposed Internet standard for creating data with optional signature and/or optional encryption whose payload holds JSON that asserts some number of claims. The tokens are signed either using a private secret or a public/private key." | [wikipedia](https://en.wikipedia.org/wiki/JSON_Web_Token) |
+
+### Class 09 Reading
+
+1. What header(s) are used in authentication and authorization  
+    * Basic
+    * Bearer
+2. What is safe to put into a JWT - [source](https://medium.com/dataseries/public-claims-and-how-to-validate-a-jwt-1d6c81823826)
+    * Header - describe the cryptographic operations to the JWT data
+    * Payload - contains verifiable security statements, such as the identity of the user and the permissions they are allowed
+    * Signature - generated using payload and a secret key
+3. How are JWTs validated - [auth0](https://auth0.com/docs/security/tokens/json-web-tokens/validate-json-web-tokens)
+    1. Check that the JWT is well formed.
+    2. Check the signature.
+    3. Check the standard claims.
+
+#### Vocabulary
+
+| Term | Definition | Source |
+|-|-|-|
+| RBAC | "Role-based access control (RBAC) is a method of restricting network access based on the roles of individual users within an enterprise." | [techtarget](https://searchsecurity.techtarget.com/definition/role-based-access-control-RBAC#:~:text=Role%2Dbased%20access%20control%20(RBAC)%20is%20a%20method%20of,doesn't%20pertain%20to%20them.) |
+| User Roles | User, Writer, Editor, Admin |  |
+| JWT Token | "... a compact URL-safe means of representing claims to be transferred between two parties." | [jwt.io](https://jwt.io/) |
