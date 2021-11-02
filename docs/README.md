@@ -102,6 +102,7 @@ In this video, Mark Rober explains how changing your changing your reaction to f
  - [Class 07 Reading](#class-07-reading)
  - [Class 08 Reading](#class-08-reading)
  - [Class 09 Reading](#class-09-reading)
+ - [Class 11 Reading](#class-11-reading)
 
 ### Class 01 Reading
 
@@ -290,3 +291,22 @@ We need to make sure that it stays secret. It should be stored somewhere that it
 | RBAC | "Role-based access control (RBAC) is a method of restricting network access based on the roles of individual users within an enterprise." | [techtarget](https://searchsecurity.techtarget.com/definition/role-based-access-control-RBAC#:~:text=Role%2Dbased%20access%20control%20(RBAC)%20is%20a%20method%20of,doesn't%20pertain%20to%20them.) |
 | User Roles | User, Writer, Editor, Admin |  |
 | JWT Token | "... a compact URL-safe means of representing claims to be transferred between two parties." | [jwt.io](https://jwt.io/) |
+
+### Class 01 Reading
+
+1. Why is access control important?  
+To limit access to sensitive information or routes.
+2. Describe an application that would need access control.  
+Anything with user accounts.
+3. What is a role used for?  
+To determine if access should be granted to a group of users.
+4. Why is role based access control more scalable than discretionary or mandatory access control?  
+Setting new rules for access control is as easy as altering or creating a new role.
+
+#### Vocabulary
+
+| Term | Definition | Source |
+|-|-|-|
+| Authorization | "A subject's active role must be authorized for the subject. With rule 1 above, this rule ensures that users can take on only roles for which they are authorized." | [wikipedia](https://en.wikipedia.org/wiki/Role-based_access_control) |
+| Role Based Access Control | "... a method of restricting network access based on the roles of individual users within an enterprise." | [techtarget](https://searchsecurity.techtarget.com/definition/role-based-access-control-RBAC#:~:text=Role%2Dbased%20access%20control%20(RBAC)%20is%20a%20method%20of,doesn't%20pertain%20to%20them.) |
+| Capabilities | "... a communicable, unforgeable token of authority. It refers to a value that references an object along with an associated set of access rights." | [wikipedia](https://en.wikipedia.org/wiki/Capability-based_security) |
