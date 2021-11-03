@@ -103,6 +103,7 @@ In this video, Mark Rober explains how changing your changing your reaction to f
  - [Class 08 Reading](#class-08-reading)
  - [Class 09 Reading](#class-09-reading)
  - [Class 11 Reading](#class-11-reading)
+ - [Class 12 Reading](#class-12-reading)
 
 ### Class 01 Reading
 
@@ -292,7 +293,7 @@ We need to make sure that it stays secret. It should be stored somewhere that it
 | User Roles | User, Writer, Editor, Admin |  |
 | JWT Token | "... a compact URL-safe means of representing claims to be transferred between two parties." | [jwt.io](https://jwt.io/) |
 
-### Class 01 Reading
+### Class 11 Reading
 
 1. Why is access control important?  
 To limit access to sensitive information or routes.
@@ -310,3 +311,28 @@ Setting new rules for access control is as easy as altering or creating a new ro
 | Authorization | "A subject's active role must be authorized for the subject. With rule 1 above, this rule ensures that users can take on only roles for which they are authorized." | [wikipedia](https://en.wikipedia.org/wiki/Role-based_access_control) |
 | Role Based Access Control | "... a method of restricting network access based on the roles of individual users within an enterprise." | [techtarget](https://searchsecurity.techtarget.com/definition/role-based-access-control-RBAC#:~:text=Role%2Dbased%20access%20control%20(RBAC)%20is%20a%20method%20of,doesn't%20pertain%20to%20them.) |
 | Capabilities | "... a communicable, unforgeable token of authority. It refers to a value that references an object along with an associated set of access rights." | [wikipedia](https://en.wikipedia.org/wiki/Capability-based_security) |
+
+### Class 12 Reading
+
+1. What is the benefit of transforming data into packets?  
+By breaking the data into small chunks, each packet will find it's own way, allowing the data to to reach it's destination quicker. Also, the packets hold additional information.
+2. UDP is often referred to as a connectionless protocol. Why is this?  
+UDP does not establish a connection, meaning that it doesn't verify if the transmitted data arrives, nor if it arrives intact.
+3. Can a socket server application have multiple socket connections?  
+Yes, and each new connection gets a unique identifier.
+4. Can a socket connection application be connected to multiple socket servers?  
+Yes, if it uses multiple ports to do so.
+5. Can an application be both a socket server and a socket connection?  
+Yes. In fact, that's how a peer-to-pier connection is established. Each client runs both a client and a server socket.
+
+### Vocabulary
+
+| Term | Definition | Source |
+|-|-|-|
+| Observer Pattern | "The observer pattern is a software design pattern in which an object, named the subject, maintains a list of its dependents, called observers, and notifies them automatically of any state changes, usually by calling one of their methods." | [wikipedia](https://en.wikipedia.org/wiki/Observer_pattern) |
+| Listener | Similar to observers, but more strictly listening to a very specific subject |  |
+| Event Handler | A process that handles any actions that need to happen in response to an event. |  |
+| Event Driven Programming | "In computer programming, event-driven programming is a programming paradigm in which the flow of the program is determined by events such as user actions, sensor outputs, or message passing from other programs or threads." | [wikipedia](https://en.wikipedia.org/wiki/Event-driven_programming) |
+| Event Loop | "... a programming construct or design pattern that waits for and dispatches events or messages in a program." | [wikipedia](https://en.wikipedia.org/wiki/Event_loop#:~:text=In%20computer%20science%2C%20the%20event,or%20messages%20in%20a%20program.&text=The%20event%20loop%20is%20also,message%20pump%2C%20or%20run%20loop.) |
+| Event Queue | "... a repository where events from an application are held prior to being processed by a receiving program or system." | [techopedia](https://www.techopedia.com/definition/24963/event-queue) |
+| Call Stack | "... a stack data structure that stores information about the active subroutines of a computer program." | [wikipedia](https://en.wikipedia.org/wiki/Call_stack) |
