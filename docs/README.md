@@ -105,6 +105,8 @@ In this video, Mark Rober explains how changing your changing your reaction to f
  - [Class 11 Reading](#class-11-reading)
  - [Class 12 Reading](#class-12-reading)
  - [Class 16 Reading](#class-16-reading)
+ - [Class 17 Reading](#class-17-reading)
+ - [Class 18 Reading](#class-18-reading)
 
 ### Class 01 Reading
 
@@ -358,7 +360,7 @@ Yes. In fact, that's how a peer-to-pier connection is established. Each client r
 ### Class 17 Reading
 
 1. Describe “The Cloud”  
-    "The Cloud" refers to everything that is accesible over the internet.
+    "The Cloud" refers to everything that is accessible over the internet.
 2. What is a container (as it relates to computers and servers)?  
     A package containing application code and any libraries and dependencies that it might need.
 3. What is auto-scaling?  
@@ -379,3 +381,19 @@ Yes. In fact, that's how a peer-to-pier connection is established. Each client r
 | AWS | Amazon Web Services is a suite of resources that provide "on-demand cloud computing platforms and APIs to individuals, companies, and governments, on a metered pay-as-you-go basis." | [wikipedia](https://en.wikipedia.org/wiki/Amazon_Web_Services) |
 | EC2/Beanstalk vs Heroku | "Heroku is container-base cloud platform offering (PaaS) whereas AWS is a secure cloud services platform providing IaaS, PaaS and SaaS. Heroku offers you a ready-to-use environment that allows you to deploy your code fast whereas the deployment process of AWS service is quite complicated." | [guru99.com](https://www.guru99.com/heroku-vs-aws.html#:~:text=KEY%20DIFFERENCE,AWS%20service%20is%20quite%20complicated.) |
 
+### Class 18 Reading
+
+1. What are serverless functions?  
+    Serverless functions are functions that are hosted in, and executed from, the cloud.
+2. If you were to create a system that emulated Lambda functions, how would you do it?  
+    I woud create a database model that holds information enabling a socket infrastucture, as well as a body of text that would contain the code.
+3. Describe how a CDN works  
+    A CDN keeps information in multiple physical locations, reducing the transmission distance to a prospective client.
+
+### Vocabulary 18
+
+| Term | Definition | Source |
+|-|-|-|
+| Serverless Functions | "...  a programmatic function written by a software developer for a single purpose. It's then hosted and maintained on infrastructure by cloud computing companies. These companies take care of code maintenance and execution so that developers can deploy new code faster and easier." | [hubspot.com](https://blog.hubspot.com/website/serverless-functions) |
+| Cloud Storage | "... a model of computer data storage in which the digital data is stored in logical pools, said to be on "the cloud". The physical storage spans multiple servers, and the physical environment is typically owned and managed by a hosting company." | [wikipedia](https://en.wikipedia.org/wiki/Cloud_storage) |
+| CDN | "... A content delivery network (CDN) refers to a geographically distributed group of servers which work together to provide fast delivery of Internet content." | [cloudflare.com](https://www.cloudflare.com/learning/cdn/what-is-a-cdn/) |
