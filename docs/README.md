@@ -107,6 +107,7 @@ In this video, Mark Rober explains how changing your changing your reaction to f
  - [Class 16 Reading](#class-16-reading)
  - [Class 17 Reading](#class-17-reading)
  - [Class 18 Reading](#class-18-reading)
+ - [Class 19 Reading](#class-19-reading)
 
 ### Class 01 Reading
 
@@ -397,3 +398,45 @@ Yes. In fact, that's how a peer-to-pier connection is established. Each client r
 | Serverless Functions | "...  a programmatic function written by a software developer for a single purpose. It's then hosted and maintained on infrastructure by cloud computing companies. These companies take care of code maintenance and execution so that developers can deploy new code faster and easier." | [hubspot.com](https://blog.hubspot.com/website/serverless-functions) |
 | Cloud Storage | "... a model of computer data storage in which the digital data is stored in logical pools, said to be on "the cloud". The physical storage spans multiple servers, and the physical environment is typically owned and managed by a hosting company." | [wikipedia](https://en.wikipedia.org/wiki/Cloud_storage) |
 | CDN | "... A content delivery network (CDN) refers to a geographically distributed group of servers which work together to provide fast delivery of Internet content." | [cloudflare.com](https://www.cloudflare.com/learning/cdn/what-is-a-cdn/) |
+
+### Class 19 Reading
+
+1. Describe the similarities between AWS API Gateway + Lambda functions and an ExpressJS Server  
+    They both establish routes that clients can use, and they both use functions to handle what happens when a route is hit.
+2. List the AWS Database offerings and talk about the pros and cons of each  
+    * RDS
+        pros: Simplified disaster recovery and automatic failover
+        cons: No native support as a read replica for on-premise Databases
+    * DynamoDB
+        * pros
+            * built-in security
+            * backup and restores
+            * in-memory caching
+        * cons
+            * Deployable only on AWS and cannot be installed on individual desktops/servers.
+            * Queries – Querying data is extremely limited.
+            * Table Joins – Joins are impossible.
+            * No Triggers.
+            * No foreign keys concept to refer to other table items.
+            * No server side scripts.
+    * ElastiCache
+        * pros:
+            * fast and scalable
+            * fully managed
+        * cons:
+            * expensive
+            * not intuitive
+3. What’s the difference between a FIFO and a standard queue?  
+    A FIFO queue is strict about managing the items in the queue. Each item will be released from the queue once and only once. A standard queue is less strict. Each item in a standard queue will be released at least once.
+4. How can the server be assured a message was properly received?  
+    If the recipient sends a message back saying that it was received.
+
+### Class 19 Vocabulary
+
+| Term | Definition |
+|-|-|
+| Serverless API | An API that is hosted in the cloud. |
+| Triggers | Hooks that cause an associated function to run when a watched condition occurs. |
+| Dynamo vs Mongo | Dynamo is a more scalable database, whereas Mongo is more robust. |
+| Dynamoose vs Mongoose | They are both modeling tools for their respective databases. |
+
