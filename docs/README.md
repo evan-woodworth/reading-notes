@@ -108,6 +108,7 @@ In this video, Mark Rober explains how changing your changing your reaction to f
  - [Class 17 Reading](#class-17-reading)
  - [Class 18 Reading](#class-18-reading)
  - [Class 19 Reading](#class-19-reading)
+ - [Class 26 Reading](#class-26-reading)
 
 ### Class 01 Reading
 
@@ -440,3 +441,17 @@ Yes. In fact, that's how a peer-to-pier connection is established. Each client r
 | Dynamo vs Mongo | Dynamo is a more scalable database, whereas Mongo is more robust. |
 | Dynamoose vs Mongoose | They are both modeling tools for their respective databases. |
 
+### Class 26 Reading
+
+1. Name 5 Javascript UI Frameworks (other than React)  
+Vue.js, Angular, jQuery, Svelte, Bootstrap.
+2. What’s the difference between a framework and a library?  
+While both are essentially a collection of code that can be utilized, a library is mostly built and driven by you, while a framework works more "behind the scenes" to direct the flow of your application.
+
+### Class 26 Vocabulary
+
+| Term | Definition |
+|-|-|
+| Rendering | Processing information to be displayed. |
+| Templates | Code that can be reused in other locations. |
+| State | "the State of a component is an object that holds some information that may change over the lifetime of the component." -[geeksforgeeks](https://www.geeksforgeeks.org/reactjs-state-react/#:~:text=The%20state%20is%20an%20instance,the%20lifetime%20of%20the%20component.) |
