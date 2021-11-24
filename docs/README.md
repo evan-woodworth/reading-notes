@@ -455,3 +455,17 @@ While both are essentially a collection of code that can be utilized, a library 
 | Rendering | Processing information to be displayed. |
 | Templates | Code that can be reused in other locations. |
 | State | "the State of a component is an object that holds some information that may change over the lifetime of the component." -[geeksforgeeks](https://www.geeksforgeeks.org/reactjs-state-react/#:~:text=The%20state%20is%20an%20instance,the%20lifetime%20of%20the%20component.) |
+
+### Class 27 Reading
+
+1. How does React differ from vanilla JS/HTML/CSS?  
+    React uses jsx to allow us to write html using javascript.
+2. What is the primary difference between a function component and a class component?  
+    The functional component doesn't use "this" to manage state,, but instead relies on hooks and props.
+
+### Class 27 Vocabulary
+
+| Term | Definition |
+|-|-|
+| Functional Components | A Functional component is a function that takes props and returns JSX. They do not have state or lifecycle methods. |
+| Children / Child Components | Components that are called by a "parent" component. |
