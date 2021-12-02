@@ -109,6 +109,9 @@ In this video, Mark Rober explains how changing your changing your reaction to f
  - [Class 18 Reading](#class-18-reading)
  - [Class 19 Reading](#class-19-reading)
  - [Class 26 Reading](#class-26-reading)
+ - [Class 27 Reading](#class-27-reading)
+ - [Class 28 Reading](#class-28-reading)
+ - [Class 31 Reading](#class-28-reading)
 
 ### Class 01 Reading
 
@@ -469,3 +472,49 @@ While both are essentially a collection of code that can be utilized, a library 
 |-|-|
 | Functional Components | A Functional component is a function that takes props and returns JSX. They do not have state or lifecycle methods. |
 | Children / Child Components | Components that are called by a "parent" component. |
+
+
+### Class 28 Reading
+
+1. Why do we not need more .html pages in a multi-page React app?  
+
+2. If we wanted a component to show up on every page, where would we put it and why?
+    - Outside the <BrowserRouter/>  
+
+    - Inside the <BrowserRouter />, outside a <Route />  
+
+    - Inside a <Route />  
+
+3. What does routing do with the components that were rendered when a new route is requested  
+
+4. What does props.children contain?  
+
+5. How do useState() and this.setState() differ?  
+
+
+### Class 28 Vocabulary
+
+| Term | Definition |
+|-|-|
+| State Hook |  |
+| Mounting and Un-Mounting |  |
+
+### Class 31 Reading
+
+1. Describe use cases useState() vs useReducer()  
+    UseState can handle individual states, while useReducer can handle multiple states at once.
+2. Why do custom hooks need the use prefix?  
+    To enable an automatic check for hook rule violations.
+3. What do custom hooks usually do?  
+    Custom hooks allow us to create reusable functions that use React's stateful logic.
+4. Using any list of custom hooks, research and name one that you think will be useful in your applications  
+    - usePermission: This hook is used to get the permission status of the browser API. Pass the API name to get the permission status. -[javascript.plainenglish.io](https://javascript.plainenglish.io/15-custom-hooks-to-make-your-react-component-lightweight-8b59b122d83a)
+5. Describe how a hook that fetches API data might work  
+    If you want to fetch data when the page loads, the useEffect() would be a great place for your axios call. If you want to fetch data when something happens, such as a button click or some other event, you could put the axios call in either a custom hook, or the useEffect hook listening for a change to the desired state.
+
+### Class 31 Vocabulary
+
+| Term | Definition |
+|-|-|
+| reducer | A reducer is a function that determines changes to an application's state. It uses the action it receives to determine this change. |
+
