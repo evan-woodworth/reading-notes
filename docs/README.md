@@ -111,7 +111,8 @@ In this video, Mark Rober explains how changing your changing your reaction to f
  - [Class 26 Reading](#class-26-reading)
  - [Class 27 Reading](#class-27-reading)
  - [Class 28 Reading](#class-28-reading)
- - [Class 31 Reading](#class-28-reading)
+ - [Class 31 Reading](#class-31-reading)
+ - [Class 32 Reading](#class-32-reading)
 
 ### Class 01 Reading
 
@@ -517,4 +518,29 @@ While both are essentially a collection of code that can be utilized, a library 
 | Term | Definition |
 |-|-|
 | reducer | A reducer is a function that determines changes to an application's state. It uses the action it receives to determine this change. |
+
+### Class 32 Reading
+
+1. When you have multiple contexts, what component type should you use (class/function) and why?  
+    I would imagine that functional components would be preferred.
+2. What are some good use cases for using the Context API for global state?  
+    Keeping track of global variables, user preferences, authentication.
+3. How can you best test context?  
+    Using jest, you can render the context with a component by passing in a jest.fn(). An example from stack overflow:
+```js
+const addItem = jest.fn()
+render(
+  <AppContext.Provider value={{ addItem }}>
+    <MyComponent />
+  </AppContext.Provider>
+)
+```
+
+### Class 32 Vocabulary
+
+| Term | Definition | Source |
+|-|-|-|
+| context | "...A method to pass props from parent to child component(s), by storing the props in a store(similar in Redux) and using these props from the store by child component(s) without actually passing them manually at each level of the component tree." | [geeksforgeeks](https://www.geeksforgeeks.org/context-in-react/#:~:text=React%20Context%20is%20a%20method,level%20of%20the%20component%20tree.) |
+| useContext() | A hook that is used to establish the context API | []() |
+| static context | "This rule applies when the static contextType property of a React component is not properly specified. The contextType property is used to consume a context created with React. When the property is specified for a React component, you can access the current value of the context using this." |  [deepscan.io](https://deepscan.io/docs/rules/react-bad-context-type) |
 
