@@ -113,6 +113,7 @@ In this video, Mark Rober explains how changing your changing your reaction to f
  - [Class 28 Reading](#class-28-reading)
  - [Class 31 Reading](#class-31-reading)
  - [Class 32 Reading](#class-32-reading)
+ - [Class 33 Reading](#class-33-reading)
 
 ### Class 01 Reading
 
@@ -543,4 +544,24 @@ render(
 | context | "...A method to pass props from parent to child component(s), by storing the props in a store(similar in Redux) and using these props from the store by child component(s) without actually passing them manually at each level of the component tree." | [geeksforgeeks](https://www.geeksforgeeks.org/context-in-react/#:~:text=React%20Context%20is%20a%20method,level%20of%20the%20component%20tree.) |
 | useContext() | A hook that is used to establish the context API | []() |
 | static context | "This rule applies when the static contextType property of a React component is not properly specified. The contextType property is used to consume a context created with React. When the property is specified for a React component, you can access the current value of the context using this." |  [deepscan.io](https://deepscan.io/docs/rules/react-bad-context-type) |
+
+### Class 33 Reading
+
+1. Why is the Context API useful?  
+    It allows you to use global data without having to manually pass props between components.
+2. Can a component outside of a provider get its context?  
+    Yes, it just needs to import the context and consume it that way.
+3. What are some common use cases for using the Context API?  
+    Authentication, user settings, internal global variables.
+4. Describe “Context Hell”  
+    Context providers nested inside of context providers nested inside of context providers nested inside of...
+
+### Class 33 Vocabulary
+
+| Term | Definition |
+|-|-|
+| global state | State variables shared between all components. |
+| global context | A way of sharing global state. |
+| provider | A component that "provides" information to a consumer. |
+| consumer | A component that "consumes" the information provided by a provider. |
 
