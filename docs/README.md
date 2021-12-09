@@ -115,6 +115,7 @@ In this video, Mark Rober explains how changing your changing your reaction to f
  - [Class 32 Reading](#class-32-reading)
  - [Class 33 Reading](#class-33-reading)
  - [Class 34 Reading](#class-34-reading)
+ - [Class 36 Reading](#class-36-reading)
 
 ### Class 01 Reading
 
@@ -581,4 +582,23 @@ render(
 |-|-|
 | role based access control | Access to a resource is determined by a user's role. |
 | http cookies | Used to store session information on a local machine. |
+
+### Class 36 Reading
+
+1. What are the advantages of storing tokens in “Cookies” vs “Local Storage”? 
+    Access. Data stored in cookies is more secure, making it more ideal for token storage.
+2. Explain 3rd party cookies. 
+    Third party cookies are exactly what they sound like: cookies that are managed by a third party, rather than the site you are visiting.
+3. How do pixel tags work?
+    "A tracking pixel is a 1×1 pixel graphic that tracks web traffic, site conversions, user behavior, and more on at a site's server level. This enables ecommerce store owners to gain a deep understanding of how users interact and respond to their ads, their email campaigns, and their site as a whole." - [nexcess.net](https://www.nexcess.net/blog/what-is-a-tracking-pixel/)
+
+### Class 36 Vocabulary
+
+| Term | Definition |
+|-|-|
+| cookies | "... text files with small pieces of data — like a username and password — that are used to identify your computer as you use a computer network." - [kaspersky](https://www.kaspersky.com/resource-center/definitions/cookies#:~:text=Cookies%20are%20text%20files%20with,you%20use%20a%20computer%20network.&text=Data%20stored%20in%20a%20cookie,to%20you%20and%20your%20computer.)|
+| authorization | "Authorization is a security mechanism to determine access levels or user/client privileges related to system resources including files, services, computer programs, data and application features." - [economictimes.indiatimes.com](https://economictimes.indiatimes.com/definition/authorization#:~:text=Definition%3A%20Authorization%20is%20a%20security,programs%2C%20data%20and%20application%20features.&text=Key%20factors%20contain%20user%20type,and%20related%20actions%20and%20roles.) |
+| access control | "Access control is a fundamental component of data security that dictates who's allowed to access and use company information and resources." - [citrix](
+What is Access Control? - Citrixhttps://www.citrix.com › solutions › secure-access › what-...) |
+| conditional rendering | "Conditional rendering is a term to describe the ability to render different user interface (UI) markup if a condition is true or false." - [javatpoint](https://www.javatpoint.com/react-conditional-rendering) |
 
