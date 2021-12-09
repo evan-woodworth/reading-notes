@@ -598,7 +598,6 @@ render(
 |-|-|
 | cookies | "... text files with small pieces of data — like a username and password — that are used to identify your computer as you use a computer network." - [kaspersky](https://www.kaspersky.com/resource-center/definitions/cookies#:~:text=Cookies%20are%20text%20files%20with,you%20use%20a%20computer%20network.&text=Data%20stored%20in%20a%20cookie,to%20you%20and%20your%20computer.)|
 | authorization | "Authorization is a security mechanism to determine access levels or user/client privileges related to system resources including files, services, computer programs, data and application features." - [economictimes.indiatimes.com](https://economictimes.indiatimes.com/definition/authorization#:~:text=Definition%3A%20Authorization%20is%20a%20security,programs%2C%20data%20and%20application%20features.&text=Key%20factors%20contain%20user%20type,and%20related%20actions%20and%20roles.) |
-| access control | "Access control is a fundamental component of data security that dictates who's allowed to access and use company information and resources." - [citrix](
-What is Access Control? - Citrixhttps://www.citrix.com › solutions › secure-access › what-...) |
+| access control | "Access control is a fundamental component of data security that dictates who's allowed to access and use company information and resources." - [citrix](https://www.citrix.com/solutions/secure-access/what-is-access-control.html#:~:text=Access%20control%20is%20a%20fundamental,appropriate%20access%20to%20company%20data.) |
 | conditional rendering | "Conditional rendering is a term to describe the ability to render different user interface (UI) markup if a condition is true or false." - [javatpoint](https://www.javatpoint.com/react-conditional-rendering) |
 
