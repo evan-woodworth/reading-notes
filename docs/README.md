@@ -116,6 +116,7 @@ In this video, Mark Rober explains how changing your changing your reaction to f
  - [Class 33 Reading](#class-33-reading)
  - [Class 34 Reading](#class-34-reading)
  - [Class 36 Reading](#class-36-reading)
+ - [Class 37 Reading](#class-37-reading)
 
 ### Class 01 Reading
 
@@ -600,4 +601,26 @@ render(
 | authorization | "Authorization is a security mechanism to determine access levels or user/client privileges related to system resources including files, services, computer programs, data and application features." - [economictimes.indiatimes.com](https://economictimes.indiatimes.com/definition/authorization#:~:text=Definition%3A%20Authorization%20is%20a%20security,programs%2C%20data%20and%20application%20features.&text=Key%20factors%20contain%20user%20type,and%20related%20actions%20and%20roles.) |
 | access control | "Access control is a fundamental component of data security that dictates who's allowed to access and use company information and resources." - [citrix](https://www.citrix.com/solutions/secure-access/what-is-access-control.html#:~:text=Access%20control%20is%20a%20fundamental,appropriate%20access%20to%20company%20data.) |
 | conditional rendering | "Conditional rendering is a term to describe the ability to render different user interface (UI) markup if a condition is true or false." - [javatpoint](https://www.javatpoint.com/react-conditional-rendering) |
+
+### Class 37 Reading
+
+1. Why choose Redux instead of the Context API for global state?  
+    Redux allows you to manage state without wrapping a component and it's children in a parent tag.
+2. What is the purpose of a reducer?  
+    A reducer manages changes to state.
+3. What does an action contain?  
+    An action contains a type designation and a payload. The type designation tells the reducer which action to take, while the payload provides any information that is required to handle the action.
+4. Why do we need to copy the state in a reducer?  
+    Reducers manage a psuedo-state, not an actual state, and are not allowed to modify an actual state. They make immutable changes, leaving the original state intact but provided an alternate state to use.
+
+### Class 37 Vocabulary
+
+| Term | Definition |
+|-|-|
+| immutable state | "Immutable state means its value cannot be changed once it's created." - [medium](https://medium.com/@mateuszsokola/understanding-immutable-state-with-immutable-js-and-typescript-91a9ba648fe5#:~:text=Immutable%20state%20means%20its%20value%20cannot%20be%20changed%20once%20it's%20created.&text=A%20mutable%20state%20allows%20us,them%20whichever%20way%20we%20want.) |
+| time travel in redux | "The Redux DevTools records dispatched actions and the state of the Redux store at every point in time. This makes it possible to inspect the state and travel back in time to a previous application state without reloading the page or restarting the app." -[medium](https://medium.com/the-web-tub/time-travel-in-react-redux-apps-using-the-redux-devtools-5e94eba5e7c0) |
+| action creator | "
+An action creator is a function that literally creates an action object. In Redux, action creators simply return an action object and pass the argument value if necessary." -[educative.io](https://www.educative.io/courses/building-teslas-battery-range-calculator-with-react-and-redux/7nVVPYOGVPr) |
+| reducer | "In Redux, a reducer is a pure function that takes an action and the previous state of the application and returns the new state. The action describes what happened and it is the reducer's job to return the new state based on that action." - [pluralsight](https://www.pluralsight.com/guides/how-to-write-redux-reducer#:~:text=Introduction,state%20based%20on%20that%20action.) |
+| dispatch | "dispatch() is the method used to dispatch actions and trigger state changes to the store. react-redux is simply trying to give you convenient access to it. Note, however, that dispatch is not available on props if you do pass in actions to your connect function." -[stackoverflow](https://stackoverflow.com/questions/42871136/dispatch-function-in-react-redux#:~:text=dispatch()%20is%20the%20method,actions%20to%20your%20connect%20function.) |
 
