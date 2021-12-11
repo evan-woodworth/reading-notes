@@ -117,6 +117,7 @@ In this video, Mark Rober explains how changing your changing your reaction to f
  - [Class 34 Reading](#class-34-reading)
  - [Class 36 Reading](#class-36-reading)
  - [Class 37 Reading](#class-37-reading)
+ - [Class 38 Reading](#class-38-reading)
 
 ### Class 01 Reading
 
@@ -622,4 +623,20 @@ render(
 | action creator | "An action creator is a function that literally creates an action object. In Redux, action creators simply return an action object and pass the argument value if necessary." -[educative.io](https://www.educative.io/courses/building-teslas-battery-range-calculator-with-react-and-redux/7nVVPYOGVPr) |
 | reducer | "In Redux, a reducer is a pure function that takes an action and the previous state of the application and returns the new state. The action describes what happened and it is the reducer's job to return the new state based on that action." - [pluralsight](https://www.pluralsight.com/guides/how-to-write-redux-reducer#:~:text=Introduction,state%20based%20on%20that%20action.) |
 | dispatch | "dispatch() is the method used to dispatch actions and trigger state changes to the store. react-redux is simply trying to give you convenient access to it. Note, however, that dispatch is not available on props if you do pass in actions to your connect function." -[stackoverflow](https://stackoverflow.com/questions/42871136/dispatch-function-in-react-redux#:~:text=dispatch()%20is%20the%20method,actions%20to%20your%20connect%20function.) |
+
+### Class 38 Reading
+
+1. How granular should your reducers be?  
+    Reducers should be very granular. They should only depend on the state and action arguments passed in, and should ideally do only one specific thing.
+2. Pro or Con – multiple reducers can “fire” when a commonly named action is dispatched.  
+    This is both a pro and a con. You can use this to your advantage to have one event cause multiple things to happen, but you have to be careful not to have an event cause unintended things to happen.
+3. Name a strategy for preventing the above.  
+    Name your actions carefully.
+
+### Class 38 Vocabulary
+
+| Term | Definition |
+|-|-|
+| store | "A store is an immutable object tree in Redux. A store is a state container which holds the application's state. Redux can have only a single store in your application." - [tutorialspoint](https://www.tutorialspoint.com/redux/redux_store.htm#:~:text=A%20store%20is%20an%20immutable,need%20to%20specify%20the%20reducer.&text=A%20preloadedState%20is%20an%20optional,initial%20state%20of%20your%20app.) |
+| combined reducers | "The combineReducers helper function turns an object whose values are different reducing functions into a single reducing function you can pass to createStore . The resulting reducer calls every child reducer, and gathers their results into a single state object." - [redux.js.org](https://redux.js.org/api/combinereducers#:~:text=The%20combineReducers%20helper%20function%20turns,into%20a%20single%20state%20object.) |
 
