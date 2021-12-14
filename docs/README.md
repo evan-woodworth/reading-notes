@@ -118,6 +118,7 @@ In this video, Mark Rober explains how changing your changing your reaction to f
  - [Class 36 Reading](#class-36-reading)
  - [Class 37 Reading](#class-37-reading)
  - [Class 38 Reading](#class-38-reading)
+ - [Class 39 Reading](#class-39-reading)
 
 ### Class 01 Reading
 
@@ -640,3 +641,16 @@ render(
 | store | "A store is an immutable object tree in Redux. A store is a state container which holds the application's state. Redux can have only a single store in your application." - [tutorialspoint](https://www.tutorialspoint.com/redux/redux_store.htm#:~:text=A%20store%20is%20an%20immutable,need%20to%20specify%20the%20reducer.&text=A%20preloadedState%20is%20an%20optional,initial%20state%20of%20your%20app.) |
 | combined reducers | "The combineReducers helper function turns an object whose values are different reducing functions into a single reducing function you can pass to createStore . The resulting reducer calls every child reducer, and gathers their results into a single state object." - [redux.js.org](https://redux.js.org/api/combinereducers#:~:text=The%20combineReducers%20helper%20function%20turns,into%20a%20single%20state%20object.) |
 
+### Class 39 Reading
+
+1. What’s the best practice for “pre-loading” data into the store (on application start) in a Redux application?  
+    You can either set it manually, "hard-coding" it in, or you can make a call to an api and receive some data.
+2. When using a thunk/async action that dispatches the actual action, which do you export from your reducer?  
+    The function.
+
+### Class 39 Vocabulary
+
+| Term | Definition |
+|-|-|
+| middleware | Functions that run before other functions. |
+| thunk | "A thunk is a function that wraps an expression to delay its evaluation." -[github->reduxjs](https://github.com/reduxjs/redux-thunk) |
