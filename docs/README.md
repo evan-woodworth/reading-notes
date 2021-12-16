@@ -12,7 +12,7 @@ A collection of notes and take-aways throughout my Code 401 journey.
 - [Act like you make $1000/hr](#act-like-you-make)
 - [How to think like a programmer](#how-to-think-like)
 - [The 5 Whys](#the-5-whys)
-- [Ethics in Tech](../articles/ethics-in-tech.md)
+- [Ethics in Tech](./articles/ethics-in-tech.md)
 
 ### Solving Problems
 [source](https://simpleprogrammer.com/solving-problems-breaking-it-down/) -John Sonmez
