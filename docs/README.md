@@ -654,3 +654,18 @@ render(
 |-|-|
 | middleware | Functions that run before other functions. |
 | thunk | "A thunk is a function that wraps an expression to delay its evaluation." -[github->reduxjs](https://github.com/reduxjs/redux-thunk) |
+
+### Class 41 Reading
+
+1. Compare and Contrast Redux Toolkit with Redux “Ducks”
+    Ducks uses a folder-based approach with everything separated into separate files, while redux uses a wrapper.
+2. What is the principle advantage of Redux Toolkit
+    Redux Toolkit is opinionated, includes default behaviors, and makes it easier to catch mistakes.
+
+### Class 41 Vocabulary
+
+| Term | Definition |
+|-|-|
+| redux toolkit slices | "A Redux Slice is a collection of reducer logic and actions for a single feature of our app. The name “slice” comes from the idea that we're splitting up the root Redux state object into multiple “slices” of slate." - [medium](https://medium.com/swlh/redux-in-react-js-reducers-and-slices-bafafec781e3) |
+| namespace | "In computing, a namespace is a set of signs that are used to identify and refer to objects of various kinds. A namespace ensures that all of a given set of objects have unique names so that they can be easily identified. Namespaces are commonly structured as hierarchies to allow reuse of names in different contexts." - [wikipedia](https://en.wikipedia.org/wiki/Namespace) |
+
